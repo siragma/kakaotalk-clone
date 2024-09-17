@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Kokoa Clone</title>
+    <title>Friends - Kokoa Clone</title>
 </head>
 <body>
     <div class="status-bar">
@@ -25,23 +25,23 @@
         </div>
     </div>
 
-    <header class="welcome-header">
-        <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
-        <p class="welcome-header__text">
-            If you have a Kokoa Account, log in with your email or phone number.
-        </p>
-    </header>
-
-    <!-- form의 method 방식은 2가지
-    1. POST : 백엔드 서버에 정보를 전송하는 방식
-    2. GET : 보안취약 / 패스워드에 부적합 / url에 포함되어도 상관 없는 정보들을 보냄 -->
-    <form action="freinds.html" method="GET" id="login-form">
-        <input name="username" type="text" placeholder="Email or phone number" />
-        <input name="password" type="password" placeholder="password" />
-        <input type="submit" value="Log In" />
-        <a href="#">Find Kakao Account or Password</a>
-    </form>
-
+    <!-- 단축키 nav>ul>li*4>a -->
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="freinds.html"><i class="fa-solid fa-user fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="#"><i class="fa-regular fa-comment fa-2x"></i></a></li>
+            <li class="nav__btn">
+                <a class="nav__link" href="#"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="#"><i class="fa-solid fa-ellipsis fa-2x"></i></a>
+            </li>
+        </ul>
+    </nav>
+ 
 
     <!-- 스크립트는 항상 마지막에 있어야함(마지막 body태그 닫기 직전에) -->
     <script src="https://kit.fontawesome.com/bafa1ff91e.js" crossorigin="anonymous"></script>       
