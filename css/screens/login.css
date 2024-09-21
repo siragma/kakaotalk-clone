@@ -39,7 +39,7 @@ not쪽에만 쓰셔야해용 */
 }
 
 #login-form input::placeholder {
-    color:rgba(0,0,0,0.4);
+    color:var(--gray04);
 }
 
 #login-form input:focus {
