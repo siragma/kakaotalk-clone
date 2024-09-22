@@ -41,9 +41,9 @@
     <main class="friends-screen">
         <div class="user-component">
             <div class="user-componet__column">
-                <img src="https://avatars3.githubusercontent.com/u/3612017" class="user-component__avatar user-component__avatar--xl"/>
+                <img src="img/walter.jpg" class="user-component__avatar user-component__avatar--xl"/>
                 <div class="user-component__text">
-                    <h4 class="user-component__title">Nicolas</h4>
+                    <h4 class="user-component__title">Walter White</h4>
                     <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
                 </div>
             </div>
@@ -57,19 +57,65 @@
         </div>
         <div class="user-component">
             <div class="user-componet__column">
-                <img src="https://avatars3.githubusercontent.com/u/3612017" class="user-component__avatar user-component__avatar--sm"/>
+                <img src="img/image.png" class="user-component__avatar user-component__avatar--sm"/>
                 <div class="user-component__text">
-                    <h4 class="user-component__title user-component__title--not-bold">Channel</h4>
+                    <h4 class="user-component__title user-component__title--not-bold">화학쌤 모임 채널</h4>
                     <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
                 </div>
             </div>
             <div class="user-componet__column">
                 <div>
-                    <span>2</span>
+                    <span>34</span>
                     <i class="fa-solid fa-chevron-right fa-xs"></i>
                 </div>
             </div>
         </div>
+        <div class="friends-screen__channel">
+            <div class="friends-screen__channel-header">
+                <span>Freinds</span>
+                <i class="fa-solid fa-chevron-up fa-xs"></i>
+            </div>
+        </div>
+        <div class="user-component">
+            <div class="user-componet__column">
+                <img src="img/jesse.jpg" class="user-component__avatar user-component__avatar--xl"/>
+                <div class="user-component__text">
+                    <h4 class="user-component__title">Jesse Pinkman</h4>
+                    <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+                </div>
+            </div>
+            <div class="user-componet__column"></div>
+        </div>   
+        <div class="user-component">
+            <div class="user-componet__column">
+                <img src="img/gus.jpg" class="user-component__avatar user-component__avatar--xl"/>
+                <div class="user-component__text">
+                    <h4 class="user-component__title">Gustavo Fring</h4>
+                    <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+                </div>
+            </div>
+            <div class="user-componet__column"></div>
+        </div>        
+        <div class="user-component">
+            <div class="user-componet__column">
+                <img src="img/saul.jpg" class="user-component__avatar user-component__avatar--xl"/>
+                <div class="user-component__text">
+                    <h4 class="user-component__title">Saul Goodman</h4>
+                    <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+                </div>
+            </div>
+            <div class="user-componet__column"></div>
+        </div>        
+        <div class="user-component">
+            <div class="user-componet__column">
+                <img src="img/skyler.jpg" class="user-component__avatar user-component__avatar--xl"/>
+                <div class="user-component__text">
+                    <h4 class="user-component__title">Skyler White</h4>
+                    <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+                </div>
+            </div>
+            <div class="user-componet__column"></div>
+        </div>                                                  
     </main>
 
     <!-- 단축키 nav>ul>li*4>a -->
@@ -99,39 +145,14 @@
     
     <div id="splash-screen">
         <i class="fa-solid fa-comment"></i>
+        
     </div>
 
     <div id="no-mobile">
-        <span>Your screen is too big!😭</span>
+        <span>Your screen is too big😭</span>
     </div>
 
     <!-- 스크립트는 항상 마지막에 있어야함(마지막 body태그 닫기 직전에) -->
     <script src="https://kit.fontawesome.com/bafa1ff91e.js" crossorigin="anonymous"></script>       
 </body>
 </html>
-
-<!--
-Shift + alt + 방향키 위 아래 : 해당 라인 복붙
-div class="name" -> div.name
-div id="id" -> div#id
-+ comment 처리는 작성후 Ctrl + / 
-(div.status-bar__column>span)*3 이라고 작성하시면 div내에 span도 작성되서 나와욧
-' ol>li*3 ' 이렇게 치면 'ol','li'우리가 원하는 그 모양으로 나와요. 'ul'로 바꿔 적을 수도 있고, 숫자도 마음대로 변경 가능합니다.
-HTML에 CSS를 임포트하고 싶을 때, "link:css"라 하고 엔터를 치면 자동 완성 된다.
-
-link:css + enter : css링크 단축키
-
-web font
-- link 보다 import를 추천한다.
-- import위치는 제일 상단
-- body에 font-family 추가
-- 모든 폰트를 추가하면 웹사이트 무거워진다.
-[Google Fonts](https://fonts.google.com/)
-
-css hack(justify-content대신사용가능)
-- 레시피 같이 어디든 쓸 수 있다. 이상하지만 작동한다.
-- 1 상위 박스 : justify-content: center; -중앙으로 몰림
-- 2 내부 박스 범위 : width: 33%; -왼쪽으로 몰려서 범위 벌어짐, 왼쪽 위치할 박스는 왼쪽에 붙어서 정렬됨
-- 3 중앙에 위치할 박스 : display: flex; justify-content: center; -중앙에 위치할 박스만 중앙에 위치함
-- 4 오른쪽에 정렬할 박스 : *display*: flex; *justify-content*: flex-end; *align-items*: center; -오른쪽에 붙어서 정렬됨
--->

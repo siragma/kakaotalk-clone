@@ -10,7 +10,7 @@
     <div class="status-bar">
         <div class="status-bar__column">
             <span>No Service</span>
-            <i class="fa-solid fa-wifi"></i><!-- Wifi Icon -->
+            <i class="fa-solid fa-wifi"></i>
               
         </div>
         <div class="status-bar__column">
@@ -19,8 +19,8 @@
         <div class="status-bar__column">
             <img class="status-bar__rotateimg" width="15" height="15" src="https://img.icons8.com/ios/50/lock-orientation.png" alt="lock-orientation"/>
             <span>11%</span>
-            <i class="fa-solid fa-battery-full fa-lg"></i> <!-- Battery Icon -->
-            <i class="fa-solid fa-bolt"></i> <!-- Lightning Icon -->
+            <i class="fa-solid fa-battery-full fa-lg"></i> 
+            <i class="fa-solid fa-bolt"></i>
        
         </div>
     </div>
@@ -36,8 +36,8 @@
     1. POST : 백엔드 서버에 정보를 전송하는 방식
     2. GET : 보안취약 / 패스워드에 부적합 / url에 포함되어도 상관 없는 정보들을 보냄 -->
     <form action="freinds.html" method="GET" id="login-form">
-        <input name="username" type="text" placeholder="Email or phone number" />
-        <input name="password" type="password" placeholder="password" />
+        <input name="username" type="text" placeholder="Email or phone number" required />
+        <input name="password" type="password" minlength="10" placeholder="password" required />
         <input type="submit" value="Log In" />
         <a href="#">Find Kakao Account or Password</a>
     </form>
@@ -49,29 +49,3 @@
     <script src="https://kit.fontawesome.com/bafa1ff91e.js" crossorigin="anonymous"></script>       
 </body>
 </html>
-
-<!--
-Shift + alt + 방향키 위 아래 : 해당 라인 복붙
-div class="name" -> div.name
-div id="id" -> div#id
-+ comment 처리는 작성후 Ctrl + / 
-(div.status-bar__column>span)*3 이라고 작성하시면 div내에 span도 작성되서 나와욧
-' ol>li*3 ' 이렇게 치면 'ol','li'우리가 원하는 그 모양으로 나와요. 'ul'로 바꿔 적을 수도 있고, 숫자도 마음대로 변경 가능합니다.
-HTML에 CSS를 임포트하고 싶을 때, "link:css"라 하고 엔터를 치면 자동 완성 된다.
-
-link:css + enter : css링크 단축키
-
-web font
-- link 보다 import를 추천한다.
-- import위치는 제일 상단
-- body에 font-family 추가
-- 모든 폰트를 추가하면 웹사이트 무거워진다.
-[Google Fonts](https://fonts.google.com/)
-
-css hack(justify-content대신사용가능)
-- 레시피 같이 어디든 쓸 수 있다. 이상하지만 작동한다.
-- 1 상위 박스 : justify-content: center; -중앙으로 몰림
-- 2 내부 박스 범위 : width: 33%; -왼쪽으로 몰려서 범위 벌어짐, 왼쪽 위치할 박스는 왼쪽에 붙어서 정렬됨
-- 3 중앙에 위치할 박스 : display: flex; justify-content: center; -중앙에 위치할 박스만 중앙에 위치함
-- 4 오른쪽에 정렬할 박스 : *display*: flex; *justify-content*: flex-end; *align-items*: center; -오른쪽에 붙어서 정렬됨
--->
