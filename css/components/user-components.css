@@ -57,5 +57,5 @@
 .user-component:hover {
     border-radius: 15px;
     padding: 10px;
-    box-shadow: 0px 10px 18px var(--gray02);
+    box-shadow: 0px 8px 18px var(--gray02);
 }
