@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More - Kokoa Clone</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i><!-- Wifi Icon -->
+              
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <img class="status-bar__rotateimg" width="15" height="15" src="https://img.icons8.com/ios/50/lock-orientation.png" alt="lock-orientation"/>
+            <span>11%</span>
+            <i class="fa-solid fa-battery-full fa-lg"></i> <!-- Battery Icon -->
+            <i class="fa-solid fa-bolt"></i> <!-- Lightning Icon -->
+       
+        </div>
+    </div>
+
+    <header class="screen__header">
+        <h1 class="screen__header__title">More</h1>
+        <div class="screen__header__icons">
+            <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+            <span><i class="fa-solid fa-music fa-lg"></i></span>
+            <span><a href="settings.html"><i class="fa-solid fa-gear fa-lg"></i></a></span>
+        </div>
+    </header>
+
+    <main class="main-screen more-screen">
+        <div class="user-component">
+            <div class="user-componet__column">
+                <img src="https://avatars3.githubusercontent.com/u/3612017" class="user-component__avatar user-component__avatar--xl"/>
+                <div class="user-component__text">
+                    <h4 class="user-component__title">Nicolas</h4>
+                    <h6 class="user-component__subtitle">+ 787 666 999<span class="badge-solid">!</span></h6>
+                </div>
+                
+            </div>
+            
+            <div class="user-componet__column">
+                <i class="fa-regular fa-message fa-2x"></i>
+            </div>
+        </div>
+
+        <div class="icons-row">
+            <div class="icons-row__icon">
+                <i class="fa-regular fa-calendar"></i>
+                <span>Calendar</span>
+            </div>
+            <div class="icons-row__icon">
+                <i class="fa-regular fa-smile-beam"></i>
+                <span>Emotions</span>
+            </div>
+            <div class="icons-row__icon">
+                <i class="fa-solid fa-paint-roller"></i>
+                <span>Themes</span>
+            </div>
+            <div class="icons-row__icon">
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+                <span>Account</span>
+            </div>
+        </div>
+
+        <div class="more-suggestions">
+            <h4 class="more-suggestions__title">
+                Suggestions
+            </h4>
+            <div class="more-suggestions__icons">
+                <div class="more-suggestions__icon">
+                    <div class="more-suggestions__icon-image">
+                        <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                    <span class="more-suggestions__icon-text">
+                        Kakao Story
+                    </span>
+                </div>
+                <div class="more-suggestions__icons">
+                    <div class="more-suggestions__icon">
+                        <div class="more-suggestions__icon-image">
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                        <span class="more-suggestions__icon-text">
+                            Kakao Story
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    </main>
+
+    <!-- 단축키 nav>ul>li*4>a -->
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="freinds.html"><i class="fa-regular fa-user fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <sapn class="nav__notification  badge">1</sapn>
+                    <i class="far fa-comment fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <sapn class="nav__notification-dot"></sapn>
+                    <i class="fa-solid fa-ellipsis fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+ 
+    <div id="no-mobile">
+        <span>Your screen is too big.</span>
+    </div>
+    <!-- 스크립트는 항상 마지막에 있어야함(마지막 body태그 닫기 직전에) -->
+    <script src="https://kit.fontawesome.com/bafa1ff91e.js" crossorigin="anonymous"></script>       
+</body>
+</html>
+
+<!--
+Shift + alt + 방향키 위 아래 : 해당 라인 복붙
+div class="name" -> div.name
+div id="id" -> div#id
++ comment 처리는 작성후 Ctrl + / 
+(div.status-bar__column>span)*3 이라고 작성하시면 div내에 span도 작성되서 나와욧
+' ol>li*3 ' 이렇게 치면 'ol','li'우리가 원하는 그 모양으로 나와요. 'ul'로 바꿔 적을 수도 있고, 숫자도 마음대로 변경 가능합니다.
+HTML에 CSS를 임포트하고 싶을 때, "link:css"라 하고 엔터를 치면 자동 완성 된다.
+
+link:css + enter : css링크 단축키
+
+web font
+- link 보다 import를 추천한다.
+- import위치는 제일 상단
+- body에 font-family 추가
+- 모든 폰트를 추가하면 웹사이트 무거워진다.
+[Google Fonts](https://fonts.google.com/)
+
+css hack(justify-content대신사용가능)
+- 레시피 같이 어디든 쓸 수 있다. 이상하지만 작동한다.
+- 1 상위 박스 : justify-content: center; -중앙으로 몰림
+- 2 내부 박스 범위 : width: 33%; -왼쪽으로 몰려서 범위 벌어짐, 왼쪽 위치할 박스는 왼쪽에 붙어서 정렬됨
+- 3 중앙에 위치할 박스 : display: flex; justify-content: center; -중앙에 위치할 박스만 중앙에 위치함
+- 4 오른쪽에 정렬할 박스 : *display*: flex; *justify-content*: flex-end; *align-items*: center; -오른쪽에 붙어서 정렬됨
+-->
